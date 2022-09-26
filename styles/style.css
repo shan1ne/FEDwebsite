@@ -20,6 +20,12 @@ button, summary {
 	/* startje */
 	--color-text:rgb(255, 255, 255);
 	--color-background:rgb(255, 101, 229);
+	--color-text-article: black;
+	--color-background-article:white;
+	--color-button:white;
+	--color-text-section:black;
+	
+
 }
 
 
@@ -35,17 +41,24 @@ button, summary {
 body {
   color:var(--color-text);
   background-color:var(--color-background);
+  margin: 0;
+  font-family: futura-pt, sans-serif;
 }
 
 article{
-	background-color: white;
+	background-color:var(--color-background-article);
 	border-radius:20px;
+	margin-top: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	
 }
 
 h1, h2, p{
 	display: flex;
 	justify-content: center;
-	font-family: 
+	padding: 1em;
+
 }
 
 p{
@@ -55,29 +68,84 @@ p{
 }
 
 img{
-	width: 35em;
+	width: 100%;
 
 }
 
-
-button :nth-child(1){
-	background-color: pink;
 
 
 a{
 	text-decoration: none;
 	color: var(--color-text);
-	border: 2px solid;
+
 	border-radius: 5px;
 
 }
 
-
+ul li{
+	list-style: none;
+}
 
 article > a{
 	text-decoration: none;
-	color: black
+	color: var(--color-text-article);
 }
 
+
+section {
+background-color:var(--color-background-article);
+}
+
+section> p,li{
+	color: var(--color-text-article);
+}
+
+nav{
+	display: flex;
+	justify-content: space-evenly;
+	top: 0;
+	
+}
+
+
+
+button{
+	background-color: var(--color-button);
+	padding: 5px;
+	border-style: none;
+	border-radius: 10px;
+
+}
+
+nav button{
+	background-color: pink;
+}
+
+button:nth-child(3){
+	background-color: var(--color-button);
+	padding: 5px;
+	border-style: none;
+
+}
+ 
+button:nth-child(3) a{
+	color: var(--color-text-article);
+	border-style: none;
+	
+}
+
+article:nth-of-type(4){
+	display: grid;
+	grid-template-columns: 12em 1fr;
+
+}
+article:nth-of-type(4) h1{
+
+}
+
+
+footer h1{
+	color: var(--color-text-section);
+}
 
 
