@@ -1,0 +1,61 @@
+*, *::after, *::before {
+    box-sizing:border-box;  
+  }
+  
+  button, summary {
+      cursor: pointer;
+  }
+
+
+
+:root {
+	
+	--color-text:black;
+	--color-background:white;
+    --color-button:white;
+	
+}
+
+body{
+    margin: 0;
+    font-family: futura-pt, sans-serif;
+}
+
+img{
+   display: block;
+  
+}
+ol li{
+    list-style-type: none;
+    flex-grow: 1;
+}
+
+ol{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+select{
+    width: 100%;
+    font-size: 1em;
+}
+
+h1{
+    font-weight: lighter;
+}
+
+button{
+    background-color:var(--color-button);
+    border-style: solid;
+border-color: #fc59bd;
+font-size: 1.5em;
+border-radius: 5px;
+margin-top: 1em;
+font-weight: lighter;
+}
+
+hr{
+   
+    color: black;
+}
